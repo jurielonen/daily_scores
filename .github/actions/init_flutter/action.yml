@@ -14,3 +14,6 @@ runs:
     - name: Get dependencies
       shell: bash
       run: flutter pub get
+    - name: Generate code
+      shell: bash
+      run: dart run build_runner build
