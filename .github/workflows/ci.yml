@@ -1,0 +1,40 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  FLUTTER_VERSION: "3.10.5"
+
+jobs:
+  flutter_analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Initialize Flutter
+        uses: ./.github/actions/init_flutter
+      - name: Flutter analyze
+        run: flutter analyze
+  flutter_format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Initialize Flutter
+        uses: ./.github/actions/init_flutter
+      - name: Dart format lib
+        run: dart format lib/** --set-exit-if-changed
+      - name: Dart format test
+        run: dart format test/** --set-exit-if-changed
+  flutter_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Initialize Flutter
+        uses: ./.github/actions/init_flutter
+      - name: Run tests
+        run: flutter test
