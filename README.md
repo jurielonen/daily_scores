@@ -23,5 +23,5 @@ This application is also dependent on the following command line argument:
 To run application from command line:
 
 ```
-flutter run --dart-define=STATS_API=<STATS_API>
+flutter run --dart-define=STATS_URL=<STATS_API>
 ```
