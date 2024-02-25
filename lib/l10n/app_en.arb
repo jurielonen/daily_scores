@@ -1,4 +1,53 @@
 {
   "@@locale": "en",
-  "appName": "Daily Scores"
+  "appName": "Daily Scores",
+  "errorBoxTitle": "Error!",
+  "errorBoxDescription": "Error: {error}",
+  "@errorBoxDescription": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Exception()"
+      }
+    }
+  },
+  "errorBoxStackTrace": "Show StackTrace",
+  "stackTraceTitle": "StackTrace",
+  "tryAgain": "Try Again",
+  "close": "Close",
+  "scheduleLoading": "Loading schedule",
+  "scheduleDayDate": "{date}",
+  "@scheduleDayDate": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "d.M",
+        "isCustomDateFormat": "true"
+      }
+    }
+  },
+  "gameListLoading": "Loading games",
+  "gameListNoGames": "No games",
+  "gameStatusStarting": "Starting",
+  "gameStatusUnknown": "Unknown",
+  "gameStatusLive": "Live",
+  "gameStatusScheduled": "Scheduled: {time}",
+  "@gameStatusScheduled": {
+    "placeholders": {
+      "time": {
+        "type": "DateTime",
+        "format": "hh:mm",
+        "isCustomDateFormat": "true"
+      }
+    }
+  },
+  "gameStatusFinal": "Final",
+  "gamePeriod": "{periodNumber, select, 1{1st} 2{2nd} 3{3rd} 4{OT} other{{periodNumber}OT}}",
+  "@gamePeriod":{
+    "placeholders": {
+      "periodNumber": {
+        "type": "String"
+      }
+    }
+  }
 }
