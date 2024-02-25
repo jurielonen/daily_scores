@@ -4,7 +4,7 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:daily_scores/api/stats_api.dart';
 import 'package:daily_scores/bloc/day_scores_bloc.dart';
 import 'package:daily_scores/model/day_scores.dart';
-import 'package:daily_scores/model/game.dart';
+import 'package:daily_scores/model/game/game.dart';
 import 'package:daily_scores/utils/date_time_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

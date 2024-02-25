@@ -49,5 +49,50 @@
         "type": "String"
       }
     }
+  },
+  "gamePeriodWithPeriod": "{periodNumber, select, 1{1st} 2{2nd} 3{3rd} 4{OT} other{{periodNumber}OT}} Period",
+  "@gamePeriodWithPeriod":{
+    "placeholders": {
+      "periodNumber": {
+        "type": "String"
+      }
+    }
+  },
+  "gameLineScoreTitle": "Linescore",
+  "gameShotsByPeriodTitle": "Shots",
+  "gameScoringPlaysTitle": "Scoring plays",
+  "scoring": "{name} ({toDate})",
+  "@scoring":{
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "toDate": {
+        "type": "int"
+      }
+    }
+  },
+  "time": "Time",
+  "strength": "Strength",
+  "shot": "Shot",
+  "gameAppBarDate": "{date}",
+  "@gameAppBarDate": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "dd.MM.yy",
+        "isCustomDateFormat": "true"
+      }
+    }
+  },
+  "gameAppBarTime": "{time}",
+  "@gameAppBarTime": {
+    "placeholders": {
+      "time": {
+        "type": "DateTime",
+        "format": "hh:mm",
+        "isCustomDateFormat": "true"
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@ part 'name_model.g.dart';
 class NameModel with _$NameModel {
   const factory NameModel({
     // ignore: invalid_annotation_target
-    @JsonKey(defaultValue: 'default') String? value,
+    @JsonKey(name: 'default') String? value,
   }) = _NameModel;
 
   factory NameModel.fromJson(Map<String, dynamic> json) =>
