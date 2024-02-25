@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../ui/schedule_page.dart';
+import '../ui/schedule/schedule_page.dart';
 
 part 'app_router.g.dart';
 

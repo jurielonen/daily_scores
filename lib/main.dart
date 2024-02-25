@@ -1,7 +1,10 @@
+import 'package:bloc/bloc.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/intl_strings.dart';
 import 'package:go_router/go_router.dart';
 
+import 'bloc/app_bloc_observer.dart';
 import 'di/di.dart';
 import 'theme/app_theme.dart';
 
@@ -10,6 +13,9 @@ void main() {
 
   setupDI();
 
+  if (kDebugMode) {
+    Bloc.observer = AppBlocObserver();
+  }
   runApp(const DailyScoresApp());
 }
 
