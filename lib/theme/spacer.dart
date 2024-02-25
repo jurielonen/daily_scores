@@ -10,6 +10,12 @@ class VSpacer {
   static Widget get medium => const SizedBox(
         height: AppDimensions.spacingMedium,
       );
+
+  static Widget get sliverXLarge => const SliverToBoxAdapter(
+        child: SizedBox(
+          height: AppDimensions.spacingXLarge,
+        ),
+      );
 }
 
 class HSpacer {

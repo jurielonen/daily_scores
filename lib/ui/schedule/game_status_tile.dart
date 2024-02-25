@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/intl_strings.dart';
 
-import '../../model/game.dart';
+import '../../model/game/game.dart';
 import '../../theme/app_dimensions.dart';
 import '../../theme/app_text.dart';
 import '../../theme/spacer.dart';

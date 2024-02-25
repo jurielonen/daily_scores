@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'game.dart';
+import 'game/game.dart';
 
 part 'day_scores.freezed.dart';
 part 'day_scores.g.dart';

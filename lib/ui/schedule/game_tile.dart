@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../model/game.dart';
+import '../../model/game/game.dart';
 import '../../model/team.dart';
+import '../../router/app_router.dart';
 import '../../theme/app_text.dart';
 import '../../theme/spacer.dart';
+import '../../utils/widget_utils.dart';
 import '../widget/pressable_container.dart';
 import 'game_status_tile.dart';
 
@@ -18,7 +19,7 @@ class GameTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: PressableContainer(
-        onTap: () {},
+        onTap: () => GameRoute(id: game.id).go(context),
         backgroundColor: Colors.black38,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -45,11 +46,7 @@ class GameTile extends StatelessWidget {
     final teamScore = team.score;
     return Row(
       children: [
-        SvgPicture.network(
-          team.logo,
-          width: 30,
-          height: 30,
-        ),
+        WidgetUtils.teamLogo(team),
         HSpacer.small,
         Expanded(
           child: Text(

@@ -109,4 +109,14 @@ class AppText {
   static final TextStyle textExtraSmall700 = textExtraSmall.copyWith(
     fontWeight: FontWeight.w700,
   );
+
+  static final TextStyle gameAppBarStateTitle = defaultTextStyle.copyWith(
+    fontWeight: FontWeight.w700,
+    fontSize: 10,
+    height: 1.33,
+  );
+
+  static final TextStyle gameAppBarStateDesc = gameAppBarStateTitle.copyWith(
+    fontWeight: FontWeight.w400,
+  );
 }
